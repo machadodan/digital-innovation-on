@@ -1,20 +1,20 @@
 # digital-innovation-on
-Solução de otimização de comunição entre e clientes e Carrefour
-Solução de comunicação entre clientes e Carrefour A solução contempla a comunicação entre clientes e o Carrefour de forma otimizada. 
-Para uma solução foi usada o Node.Js; API do telegrama; DialogFlow; youtube DataAPI Por meio de um agente virtual criado no Telegram o nosso - Innovation Client Carrefour, ele interage de forma automática com o cliente Carrefour. 
-Para isso, foi criada uma base de conhecimento no Dialogflow e com base na pergunta do cliente ou agente virtual retorna uma resposta. uma solução tem os seguintes arquivos: 
-dialogflow - onde esta configurada parte das intenções ou seja com base na pergunta retorna respostas.
-index.js contém o token do do telegrama; chamada e retorno de função; 
- youtube.js - É uma parte da configuração de retorno dos vídeos; por meio de prometer que fica ouvindo quando finalizar e ocorrer erro de erro msg 
-yt-config-Json - contem uma API de dados-chave do youtube que chama no youtube.js 
-package-Json -contendo as dependências do projeto: dialogflow, telegram, youtube- 
-Informo que foi desativado como chave de configuração do Telegram; youtube por questão de segurança uma vez que o projeto é público. 
-Na base de conhecimento foi criada uma entidade chamada: Carrinho foram geradas intenções com base no conhecimento. 
-o cliente inicia uma conversa com qualquer coisa que o agente analisa e retorna com base na pergunta. Se o cliente fala: 
-cliente : oi 
-Agente: Olá, que pode ajudar 
-Cliente: deseja casa, carro ou sabe o kkkkk 
-Agente: Infelizmente, não é possível ajudar a recuperar uma variedade de alimentos ..... experimente pesquisar por palavras-chave: Protudo; Alimentos; Padaria;
-Cliente: churrasco
-Agente: direciona o cliente para sessão dicas do site onde ele define a quantidade de pessoas para saber quanto vai comprar de alimentos.
-O projeto é simples mais pode ser melhorado.
+                                     A solução tem o objetivo de otimizar a comunicação entre clientes e o Carrefour. 
+Objetivo: Estabelecer a comunicação pelo aplicativo de mensageria onde o agente virtual " Innovation Client Carrefour", interage de forma automática com o cliente Carrefour, através de perguntas e respostas.
+Tecnologias: 
+	- Node.Js; 
+	- API do telegrama;
+	- DialogFlow; 
+	- youtube DataAPI 
+ :Dialogflow para base de conhecimento e treinamento do agente virtual; 
+ : criada uma entidade chamada Carrinho(com a base de conhecimento para solução) e criadas intenções.
+ :Telegram aplicativo para troca de mensagens; 
+ :youtube DataAPI retorno de vídeos
+Obs: As chave de configuração do Telegram; youtube por questão de segurança uma vez que o projeto é público foram retiradas
+Modelo: 
+	o cliente inicia uma conversa com qualquer coisa que o agente analisa e retorna uma resposta com base na pergunta.
+	Se a pergunta for satisfatório o agente direciona o cliente
+	Se a pergunta não for satisfatória o agente retorna a mensagem auxiliando a pesquisar por palavras-chave.
+	Se o cliente solicitar um vídeo sobre o produto sera retornado um vídeo
+Impedimentos:
+	A implementação é simples porém funcional, mas o desafio maior foi configurar e integrar varias tecnologias diferentes.
